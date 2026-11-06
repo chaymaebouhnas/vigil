@@ -1,0 +1,417 @@
+{
+  "window_level_holdout": {
+    "benign": {
+      "precision": 0.986,
+      "recall": 0.999,
+      "support": 20698
+    },
+    "brute_force": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 61
+    },
+    "c2_beacon": {
+      "precision": 0.997,
+      "recall": 0.757,
+      "support": 1155
+    },
+    "credential_stuffing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 42
+    },
+    "data_exfil": {
+      "precision": 0.877,
+      "recall": 0.877,
+      "support": 81
+    },
+    "dns_tunnel": {
+      "precision": 0.979,
+      "recall": 0.913,
+      "support": 104
+    },
+    "port_scan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 19
+    },
+    "web_injection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 25
+    },
+    "macro avg": {
+      "precision": 0.98,
+      "recall": 0.943,
+      "support": 22185
+    }
+  },
+  "scenario_detection": [
+    {
+      "scenario": "brute_force",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 11.3,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "brute_force",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 5.4,
+      "false_alerts": 2
+    },
+    {
+      "scenario": "brute_force",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 29.7,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "brute_force",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 7.3,
+      "false_alerts": 3
+    },
+    {
+      "scenario": "credential_stuffing",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 17.5,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "credential_stuffing",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 5.7,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "credential_stuffing",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 7,
+      "runs": 8,
+      "median_seconds_to_detect": 41.8,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "credential_stuffing",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 10.7,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "port_scan",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 5.1,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "port_scan",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 5.1,
+      "false_alerts": 3
+    },
+    {
+      "scenario": "port_scan",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 5,
+      "runs": 8,
+      "median_seconds_to_detect": 10.5,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "port_scan",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 5.2,
+      "false_alerts": 2
+    },
+    {
+      "scenario": "web_injection",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "web_injection",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "web_injection",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "web_injection",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 2
+    },
+    {
+      "scenario": "dns_tunnel",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 10.6,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "dns_tunnel",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 8.0,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "dns_tunnel",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 25.3,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "dns_tunnel",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 13.7,
+      "false_alerts": 2
+    },
+    {
+      "scenario": "c2_beacon",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 230.5,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "c2_beacon",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 168.4,
+      "false_alerts": 4
+    },
+    {
+      "scenario": "c2_beacon",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 460.2,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "c2_beacon",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 325.9,
+      "false_alerts": 4
+    },
+    {
+      "scenario": "data_exfil",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 8.2,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "data_exfil",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 8.2,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "data_exfil",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 23.8,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "data_exfil",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 18.3,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "log_prompt_injection",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "log_prompt_injection",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "log_prompt_injection",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "log_prompt_injection",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 0.0,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "full_intrusion",
+      "strength": "normal",
+      "engine": "rules",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 17.5,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "full_intrusion",
+      "strength": "normal",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 5.9,
+      "false_alerts": 1
+    },
+    {
+      "scenario": "full_intrusion",
+      "strength": "stealthy",
+      "engine": "rules",
+      "detected": 7,
+      "runs": 8,
+      "median_seconds_to_detect": 40.6,
+      "false_alerts": 0
+    },
+    {
+      "scenario": "full_intrusion",
+      "strength": "stealthy",
+      "engine": "rules+ml",
+      "detected": 8,
+      "runs": 8,
+      "median_seconds_to_detect": 9.8,
+      "false_alerts": 0
+    }
+  ],
+  "false_alerts_per_simulated_hour": {
+    "rules": 0.0,
+    "rules+ml": 0.17
+  },
+  "unseen_attack_test": [
+    {
+      "attack_never_trained_on": "brute_force",
+      "ml_flagged": 9,
+      "runs": 10
+    },
+    {
+      "attack_never_trained_on": "credential_stuffing",
+      "ml_flagged": 10,
+      "runs": 10
+    },
+    {
+      "attack_never_trained_on": "port_scan",
+      "ml_flagged": 0,
+      "runs": 10
+    },
+    {
+      "attack_never_trained_on": "web_injection",
+      "ml_flagged": 9,
+      "runs": 10
+    },
+    {
+      "attack_never_trained_on": "dns_tunnel",
+      "ml_flagged": 0,
+      "runs": 10
+    },
+    {
+      "attack_never_trained_on": "c2_beacon",
+      "ml_flagged": 0,
+      "runs": 10
+    },
+    {
+      "attack_never_trained_on": "data_exfil",
+      "ml_flagged": 0,
+      "runs": 10
+    }
+  ],
+  "seconds": 1253
+}

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+models/
+frontend/node_modules/
+reports/train.log
